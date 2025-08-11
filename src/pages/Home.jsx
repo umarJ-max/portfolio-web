@@ -11,7 +11,6 @@ import {
   useTheme
 } from '@mui/material';
 import { useState } from 'react';
-import profilePic from '../assets/Picsart_24-12-23_09-48-46-854.JPG';
 import profileImage from '../assets/Picsart_24-12-23_09-48-46-854.JPG';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -147,8 +146,8 @@ export default function Home() {
               }}
             >
               <Box
+                component="img"
                 src={profileImage}
-                                src={profilePic}
                 alt="Umar J"
                 sx={{
                   width: '100%',
