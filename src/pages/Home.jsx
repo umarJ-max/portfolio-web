@@ -11,7 +11,7 @@ import {
   useTheme
 } from '@mui/material';
 import { useState } from 'react';
-import profileImage from '../assets/Picsart_24-12-23_09-48-46-854.JPG';
+import profileImage from '/src/assets/Picsart_24-12-23_09-48-46-854.JPG';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
