@@ -11,6 +11,8 @@ import {
   useTheme
 } from '@mui/material';
 import { useState } from 'react';
+import profilePic from '../assets/Picsart_24-12-23_09-48-46-854.JPG';
+import profileImage from '../assets/Picsart_24-12-23_09-48-46-854.JPG';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -145,8 +147,8 @@ export default function Home() {
               }}
             >
               <Box
-                component="img"
-                src="https://raw.githubusercontent.com/umarJ-max/profile-image/main/Picsart_24-12-23_09-48-46-854.JPG"
+                src={profileImage}
+                                src={profilePic}
                 alt="Umar J"
                 sx={{
                   width: '100%',
