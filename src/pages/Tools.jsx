@@ -10,8 +10,9 @@ export default function Tools() {
       {/* Hero Section */}
       <Box 
         sx={{ 
-          pt: 8,
+          pt: { xs: 10, md: 8 },
           pb: 6,
+          marginTop: { xs: '56px', sm: '64px' },
           bgcolor: 'background.paper',
           borderBottom: 1,
           borderColor: 'divider'

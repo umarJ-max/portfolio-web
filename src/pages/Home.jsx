@@ -10,6 +10,7 @@ import {
   Grid,
   useTheme
 } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import profileImage from '/src/assets/Picsart_24-12-23_09-48-46-854.JPG';
 import EmailIcon from '@mui/icons-material/Email';
