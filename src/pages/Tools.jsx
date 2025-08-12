@@ -120,11 +120,14 @@ export default function Tools() {
                   fullWidth
                   href="https://script.google.com/macros/s/AKfycbwVKWYRDaZh1HOXDrAoYj5WRAfJXDRRvUBZYh5pOBKP-5FLERKL5xlW1tymug7275fg/exec"
                   target="_blank"
+                  rel="noopener noreferrer"
                   sx={{
                     py: 1.5,
-                    bgcolor: 'primary.main',
+                    background: theme => `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+                    transition: 'all 0.3s ease',
                     '&:hover': {
-                      bgcolor: 'primary.dark',
+                      transform: 'translateY(-2px)',
+                      boxShadow: '0 8px 20px rgba(0,0,0,0.2)'
                     }
                   }}
                 >

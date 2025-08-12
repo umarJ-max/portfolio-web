@@ -138,9 +138,8 @@ export default function Home() {
                   variant="contained"
                   size="large"
                   startIcon={<CodeIcon />}
-                  href="https://script.google.com/macros/s/AKfycbwVKWYRDaZh1HOXDrAoYj5WRAfJXDRRvUBZYh5pOBKP-5FLERKL5xlW1tymug7275fg/exec"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  component={Link}
+                  to="/tools"
                   sx={{
                     background: theme => `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
                     transition: 'transform 0.2s, box-shadow 0.2s',
@@ -150,7 +149,7 @@ export default function Home() {
                     }
                   }}
                 >
-                  Try My Tools
+                  Explore Tools
                 </Button>
                 <Button
                   variant="outlined"
