@@ -29,11 +29,12 @@ export default function Home() {
       {/* Hero Section */}
       <Box 
         sx={{
-          pt: { xs: 4, md: 8 },
+          pt: { xs: 10, md: 8 },  // Increased top padding for mobile
           pb: { xs: 8, md: 12 },
           minHeight: '90vh',
           display: 'flex',
-          alignItems: 'center'
+          alignItems: 'center',
+          marginTop: { xs: '56px', sm: '64px' }  // Add margin for the navbar height
         }}
       >
         <Container maxWidth="lg">
