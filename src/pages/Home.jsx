@@ -57,7 +57,19 @@ export default function Home() {
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   mb: 2,
-                  letterSpacing: '-0.02em'
+                  letterSpacing: '-0.02em',
+                  textShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                  position: 'relative',
+                  '&::after': {
+                    content: '""',
+                    position: 'absolute',
+                    bottom: '-10px',
+                    left: '0',
+                    width: '60px',
+                    height: '4px',
+                    background: theme => theme.palette.primary.main,
+                    borderRadius: '2px'
+                  }
                 }}
               >
                 Hi, I'm Umar J
@@ -67,11 +79,37 @@ export default function Home() {
                 sx={{ 
                   mb: 3,
                   color: 'text.primary',
-                  fontWeight: 600
+                  fontWeight: 700,
+                  display: 'flex',
+                  flexDirection: { xs: 'column', sm: 'row' },
+                  gap: { xs: 1, sm: 2 },
+                  alignItems: { xs: 'flex-start', sm: 'center' }
                 }}
               >
-                Python Developer & 
-                <Box component="span" sx={{ color: 'secondary.main' }}> Automation Expert</Box>
+                <Box component="span" sx={{ 
+                  position: 'relative',
+                  '&::after': {
+                    content: '""',
+                    position: 'absolute',
+                    bottom: '0',
+                    left: '0',
+                    width: '100%',
+                    height: '2px',
+                    background: 'currentColor',
+                    opacity: 0.3
+                  }
+                }}>
+                  Python Developer
+                </Box>
+                <Box component="span" sx={{ 
+                  color: 'secondary.main',
+                  background: theme => `linear-gradient(120deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main})`,
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  fontWeight: 800
+                }}> 
+                  & Automation Expert
+                </Box>
               </Typography>
               <Typography 
                 variant="body1" 
@@ -79,11 +117,15 @@ export default function Home() {
                   mb: 4,
                   color: 'text.secondary',
                   fontSize: '1.1rem',
-                  lineHeight: 1.7
+                  lineHeight: 1.8,
+                  maxWidth: '600px',
+                  '& strong': {
+                    color: 'text.primary',
+                    fontWeight: 600
                 }}
               >
-                I create smart automation solutions and modern web experiences. 
-                Specializing in Python development and AI-powered tools that make 
+                I create <strong>smart automation solutions</strong> and <strong>modern web experiences</strong>. 
+                Specializing in <strong>Python development</strong> and <strong>AI-powered tools</strong> that make 
                 complex tasks simple and efficient.
               </Typography>
               <Stack 
@@ -95,9 +137,19 @@ export default function Home() {
                   variant="contained"
                   size="large"
                   startIcon={<CodeIcon />}
-                  href="/tools"
+                  href="https://script.google.com/macros/s/AKfycbwVKWYRDaZh1HOXDrAoYj5WRAfJXDRRvUBZYh5pOBKP-5FLERKL5xlW1tymug7275fg/exec"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    background: theme => `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+                    transition: 'transform 0.2s, box-shadow 0.2s',
+                    '&:hover': {
+                      transform: 'translateY(-2px)',
+                      boxShadow: '0 8px 20px rgba(0,0,0,0.2)'
+                    }
+                  }}
                 >
-                  Explore My Work
+                  Try My Tools
                 </Button>
                 <Button
                   variant="outlined"

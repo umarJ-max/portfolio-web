@@ -116,11 +116,20 @@ function NavBar({ mode, setMode }) {
       position="fixed" 
       elevation={0} 
       sx={{
-        bgcolor: mode === 'dark' ? 'background.paper' : 'white',
+        bgcolor: mode === 'dark' ? 'rgba(30, 41, 59, 0.8)' : 'rgba(255, 255, 255, 0.8)',
         borderBottom: 1,
         borderColor: 'divider',
-        backdropFilter: 'blur(8px)',
-        boxShadow: theme.shadows[2]
+        backdropFilter: 'blur(12px)',
+        boxShadow: 'none',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: '1px',
+          background: theme => `linear-gradient(90deg, ${theme.palette.primary.main}00, ${theme.palette.primary.main}, ${theme.palette.primary.main}00)`
+        }
       }}
     >
       <Container maxWidth="lg">
