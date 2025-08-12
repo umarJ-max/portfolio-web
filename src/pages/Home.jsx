@@ -119,13 +119,14 @@ export default function Home() {
                   fontSize: '1.1rem',
                   lineHeight: 1.8,
                   maxWidth: '600px',
-                  '& strong': {
+                  '& .highlight': {
                     color: 'text.primary',
                     fontWeight: 600
+                  }
                 }}
               >
-                I create <strong>smart automation solutions</strong> and <strong>modern web experiences</strong>. 
-                Specializing in <strong>Python development</strong> and <strong>AI-powered tools</strong> that make 
+                I create <span className="highlight">smart automation solutions</span> and <span className="highlight">modern web experiences</span>. 
+                Specializing in <span className="highlight">Python development</span> and <span className="highlight">AI-powered tools</span> that make 
                 complex tasks simple and efficient.
               </Typography>
               <Stack 
