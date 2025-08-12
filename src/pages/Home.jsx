@@ -102,10 +102,11 @@ export default function Home() {
                 <Button
                   variant="outlined"
                   size="large"
-                  href="/UmarJ_CV.pdf"
-                  download
+                  href="https://github.com/umarJ-max"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Download CV
+                  View GitHub
                 </Button>
               </Stack>
             </Box>
