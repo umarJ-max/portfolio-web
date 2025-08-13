@@ -94,11 +94,12 @@ function App() {
                 backgroundColor: 'background.default'
               }}
             >
-              <Routes>
-                <Route path="/" element={<Home mode={mode} />} />
-                <Route path="/tools" element={<Tools />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
+                <Routes>
+    <Route path="/" element={<Home mode={mode} />} />
+    <Route path="/tools" element={<Tools />} />
+    <Route path="/drive-tool" element={<DriveTool />} />
+    <Route path="*" element={<NotFound />} />
+  </Routes>
             </Box>
           </Box>
         </Router>

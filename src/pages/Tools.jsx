@@ -93,28 +93,35 @@ export default function Tools() {
                   </Typography>
                 </Box>
               </Box>
-              <Box sx={{ p: 3, flexGrow: 1 }}>
-                <Typography color="text.secondary" paragraph>
-                  Seamlessly clone files from one Google Drive to another with a single click.
-                  Fast, secure, and hassle-free transfer of your important files.
-                </Typography>
-                <Stack spacing={2}>
-                  <Typography variant="subtitle2" color="text.primary">
-                    Key Features:
-                  </Typography>
-                  <Box component="ul" sx={{ pl: 2, mt: 1 }}>
-                    <Typography component="li" variant="body2" color="text.secondary">
-                      Fast and reliable file transfer
-                    </Typography>
-                    <Typography component="li" variant="body2" color="text.secondary">
-                      Secure authentication
-                    </Typography>
-                    <Typography component="li" variant="body2" color="text.secondary">
-                      Preserves file structure
-                    </Typography>
-                  </Box>
-                </Stack>
-              </Box>
+             <Box sx={{ p: 3, flexGrow: 1 }}>
+  <Typography variant="body1" color="text.primary" paragraph>
+    Move <strong>entire Drive folders</strong> to another account in <strong>one click</strong>.
+    Keeps file names, folders, timestamps and sharing permissions intact—
+    no zips, no manual drag-and-drop, no 15 GB download quota headaches.
+  </Typography>
+
+  <Typography variant="body1" color="text.primary" paragraph>
+    Built for freelancers, agencies and students who juggle multiple Google accounts.
+    Just sign in, pick source & destination, hit <em>Clone</em>—done.
+  </Typography>
+
+  <Stack spacing={1}>
+    <Typography variant="subtitle2" color="text.primary">
+      Zero-config superpowers:
+    </Typography>
+    <Box component="ul" sx={{ pl: 2, mt: 1 }}>
+      <Typography component="li" variant="body2" color="text.secondary">
+        ⚡ Transfers run in the cloud—close the tab, come back later.
+      </Typography>
+      <Typography component="li" variant="body2" color="text.secondary">
+        🔐 OAuth 2.0—your tokens never touch our servers.
+      </Typography>
+      <Typography component="li" variant="body2" color="text.secondary">
+        📂 Preserves nested folders & sharing links automatically.
+      </Typography>
+    </Box>
+  </Stack>
+</Box>
               <Box sx={{ p: 3, pt: 0 }}>
                 <Button
                   variant="contained"
