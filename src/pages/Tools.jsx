@@ -93,31 +93,69 @@ export default function Tools() {
                 </Box>
               </Box>
              <Box sx={{ p: 3, flexGrow: 1 }}>
-  <Typography variant="body1" color="text.primary" paragraph>
-    Move <strong>entire Drive folders</strong> to another account in <strong>one click</strong>.
-    Keeps file names, folders, timestamps and sharing permissions intact—
-    no zips, no manual drag-and-drop, no 15 GB download quota headaches.
+  <Typography 
+    variant="h6" 
+    color="primary.main" 
+    sx={{ mb: 2, fontWeight: 600 }}
+  >
+    🚀 Ultimate Drive Management Solution
   </Typography>
 
   <Typography variant="body1" color="text.primary" paragraph>
-    Built for freelancers, agencies and students who juggle multiple Google accounts.
-    Just sign in, pick source & destination, hit <em>Clone</em>—done.
+    Transform how you handle Google Drive transfers with our powerful automation tool.
+    Perfect for educators, content creators, and professionals managing multiple accounts.
   </Typography>
 
-  <Stack spacing={1}>
-    <Typography variant="subtitle2" color="text.primary">
-      Zero-config superpowers:
-    </Typography>
-    <Box component="ul" sx={{ pl: 2, mt: 1 }}>
-      <Typography component="li" variant="body2" color="text.secondary">
-        ⚡ Transfers run in the cloud—close the tab, come back later.
+  <Stack spacing={3}>
+    <Box>
+      <Typography variant="subtitle1" color="secondary.main" sx={{ mb: 1, fontWeight: 600 }}>
+        ⚡ Core Features
       </Typography>
-      <Typography component="li" variant="body2" color="text.secondary">
-        🔐 OAuth 2.0—your tokens never touch our servers.
+      <Box component="ul" sx={{ pl: 2, mt: 1 }}>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          🔄 One-Click Drive Transfer: Move entire folders between accounts instantly
+        </Typography>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          📂 Smart Preservation: Maintains folder structure, timestamps, and sharing permissions
+        </Typography>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          💨 No Download Required: Bypass the 15GB quota limit with direct cloud transfers
+        </Typography>
+      </Box>
+    </Box>
+
+    <Box>
+      <Typography variant="subtitle1" color="secondary.main" sx={{ mb: 1, fontWeight: 600 }}>
+        🛠️ Advanced Tools
       </Typography>
-      <Typography component="li" variant="body2" color="text.secondary">
-        📂 Preserves nested folders & sharing links automatically.
+      <Box component="ul" sx={{ pl: 2, mt: 1 }}>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          ✨ Bulk File Management: Rename thousands of files with one click
+        </Typography>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          🔒 Privacy Controls: Instantly update sharing settings across entire folders
+        </Typography>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          📚 Content Management: Add or remove promotional materials in bulk
+        </Typography>
+      </Box>
+    </Box>
+
+    <Box>
+      <Typography variant="subtitle1" color="secondary.main" sx={{ mb: 1, fontWeight: 600 }}>
+        🛡️ Enterprise-Grade Security
       </Typography>
+      <Box component="ul" sx={{ pl: 2, mt: 1 }}>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          🔐 OAuth 2.0 Authentication: Your credentials stay secure
+        </Typography>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          ⚡ Cloud-Powered: Run transfers in the background, close the tab and return later
+        </Typography>
+        <Typography component="li" variant="body2" color="text.primary" sx={{ mb: 1 }}>
+          � Auto-Sync: Changes reflect instantly across all connected drives
+        </Typography>
+      </Box>
     </Box>
   </Stack>
 </Box>
