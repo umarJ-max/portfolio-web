@@ -6,13 +6,12 @@ import CodeIcon from '@mui/icons-material/Code';
 import { Link } from 'react-router-dom';
 export default function Tools() {
   return (
-    <Box>
+    <Box sx={{ bgcolor: 'background.default', minHeight: '100vh' }}>
       {/* Hero Section */}
       <Box 
         sx={{ 
-          pt: { xs: 10, md: 8 },
+          pt: { xs: 12, md: 10 },
           pb: 6,
-          marginTop: { xs: '56px', sm: '64px' },
           bgcolor: 'background.paper',
           borderBottom: 1,
           borderColor: 'divider'
