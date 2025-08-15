@@ -125,9 +125,8 @@ export default function Tools() {
                 <Button
                   variant="contained"
                   fullWidth
-                  href="https://script.google.com/macros/s/AKfycbzNC5zZ2dx6MxaA1nCFlSCbhS1JKvXT0NRXRSlPrtN10VB5O0e2j2a0fwXzlqWEezji/exec"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  component={Link}
+                  to="/drive-tool"
                   sx={{
                     py: 1.5,
                     background: theme => `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
